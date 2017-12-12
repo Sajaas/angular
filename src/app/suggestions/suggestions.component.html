@@ -3,5 +3,5 @@
   <li *ngFor="let video of videos" (click)="selectVideo(video)"> {{video.name}}
   </li> </ul>
 <!--<video-detail *ngIf="selectedVideo" [video]="selectedVideo"></video-detail>-->
-
+<button (click)="showHide()">Show/hide text</button>
 <p *ngIf="isShown">This should be hidden or shown</p>

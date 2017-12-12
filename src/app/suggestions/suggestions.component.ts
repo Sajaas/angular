@@ -14,11 +14,7 @@ export class SuggestionsComponent implements OnInit {
   isShown: boolean = false
 
   showHide() {
-    if this.isShown === true {
-      this.isShown = false;
-    } else {
-      this.isShown = true;
-    }
+    this.isShown =  (this.isShown ? false : true)
   }
   constructor() { }
 
